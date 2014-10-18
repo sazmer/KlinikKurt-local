@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.MSR.Klinikkurt" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+	<name>KlinikKurt</name>
+	<description>Äntligen kan du fylla i KlinikKurt och VårdcentralKurt direkt från din telefon - Enklare, snabbare, smidigare, snyggare!
+
+		Denna app är endast för studenter på Läkarprogrammet vid Uppsala Universitet.
+ 
+		KlinikKurt är en särskild utvärdering av klinisk handledning på Uppsalas läkarutbildning. Utvärderingen består av tio frågor som fylls i efter avslutad klinisk placering, såväl på Akademiska sjukhuset som på sjukhus i regionen.
+
+		VårdcentralKurt utvärderar på liknande sätt vårdcentralplaceringarna. I slutet av varje termin sammanställs resultaten och mynnar för klinikerna i Uppsala ut i en prestigefylld kliniktävling där både ära och en viss summa pengar står på spel.
+
+		Alla som fyller i KlinikKurt eller VårdcentralKurt hjälper till att göra läkarutbildningen bättre, dessutom har du chans att vinna i lotteriet med ett pass med anestesihelikoptern som första pris!</description>
+	<author email="it-bevakare@msr.studorg.uu.se" href="http://www.studieradet.se">Medicinska Studierådet Uppsala</author>
+	<access origin="*" />
+	<preference name="fullscreen" value="false" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="orientation" value="portrait" />
+	<preference name="AutoHideSplashScreen" value="false" />
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="splash-screen-duration" value="12000" />
+	<preference name="target-device" value="handset" />
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.network-information" />
+	<gap:plugin name="org.apache.cordova.device-motion" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.splashscreen" />
+	<gap:plugin name="org.li8.inappbrowser" version="0.1" />
+	<gap:plugin name="org.apache.cordova.device-orientation" />
+	<gap:plugin name="org.apache.cordova.console" />
+	<gap:plugin name="ihome.cordova.plugin.local-notification" />
+	<gap:plugin name="nl.x-services.plugins.ioswebviewcolor" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
+	<!-- snart push -->
+	
+	<splash src="splash.png" />
+	<gap:splash src="splash.png" gap:platform="ios"/>
+	<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icons/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+	<!--hack ios-->
+	<icon src="icon.png" gap:platform="ios" width="57" height="57"/>
+	<!-- iPhone and iPod touch -->
+	<gap:splash src="splash/ios/default.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash/ios/Default@2x.png" gap:platform="ios" width="640" height="960" />
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<gap:splash src="splash/ios/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+	<!-- iPhone / iPod Touch  -->
+	<icon src="icons/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="icons/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+	<!-- iPad -->
+	<icon src="icons/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icons/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+	<icon src="icons/ios/icon@2x.png" gap:platform="ios" width="114" height="114" />
+</widget>

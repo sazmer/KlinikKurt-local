@@ -1,0 +1,47 @@
+#klinkurtnew, #omnew, #ifylltnew, #vckurtnew {
+    background-size:auto 70%;
+    background-repeat:no-repeat;
+    background-position: 30% 80%;
+}
+#klinkurtnew {
+    background-image: url(../img/fkk.png);
+}
+#omnew {
+    background-image: url(../img/info.png);
+    height:27% !important;
+    bottom:-2%;
+}
+#ifylltnew {
+    background-image: url(../img/vfi.png);
+}
+#vckurtnew {
+    background-image: url(../img/fvck.png);
+    height:27% !important;
+    bottom:49%;
+}
+.bigbtnsmltxt, .bigbtnbigtxt{
+	display:none;
+}
+#svark .ui-controlgroup-horizontal .ui-radio {
+width: 16%;
+}
+#vctermradio .ui-controlgroup-horizontal .ui-radio {
+width: 18%;
+border: none;
+}
+#vckurtform .ui-controlgroup-horizontal, #klinikkurt .ui-controlgroup-horizontal {
+margin-left: 8%;
+}
+.popupright {
+//    right:3%;
+}
+.popupleft {
+//    left: 3%;
+}
+#vcsex .ui-controlgroup-horizontal, #kksex .ui-controlgroup-horizontal {
+margin-left:25%;
+}
+
+#vccont h2{
+    padding-left: 3%;
+}
