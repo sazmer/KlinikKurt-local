@@ -296,7 +296,7 @@ $(document).delegate("#hem", "pageinit", function(event, ui) {
 				}, 1000);
 			}, 300);
 		}, 5);
-		e.stopImmediatePropagation();
+		event.stopImmediatePropagation();
 		return false;
 	}
 
