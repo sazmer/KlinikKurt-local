@@ -58,6 +58,7 @@ function iOSversion() {
 	}
 }
 
+var pushNotification;
 var ver = new Array();
 ver = iOSversion();
 
@@ -65,6 +66,7 @@ function onBodyLoad() {
 	//    StatusBar.overlaysWebView(true);
 	navigator.splashscreen.show();
 	document.addEventListener("deviceready", onDeviceReady, false);
+	document.addEventListener("deviceready", initPushwoosh, false);
 	$.mobile.page.prototype.options.domCache = false;
 
 	if (ver[0] >= 7) {
@@ -76,6 +78,36 @@ function onBodyLoad() {
 	}
 }
 
+function initPushwoosh() {
+	var pushNotification = window.plugins.pushNotification;
+
+	//set push notifications handler
+	document.addEventListener('push-notification', function(event) {
+		var title = event.notification.title;
+		var userData = event.notification.userdata;
+
+		if ( typeof (userData) != "undefined") {
+			console.warn('user data: ' + JSON.stringify(userData));
+		}
+
+		alert(title);
+	});
+
+	//initialize Pushwoosh with projectid: "996348093822", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+	pushNotification.onDeviceReady({
+		projectid : "996348093822",
+		appid : "C25C8-A3BC7"
+	});
+
+	//register for pushes
+	pushNotification.registerDevice(function(status) {
+		var pushToken = status;
+		console.warn('push token: ' + pushToken);
+	}, function(status) {
+		console.warn(JSON.stringify(['failed to register ', status]));
+	});
+}
+
 function onDeviceReady() {
 	var devicePlatform = device.platform;
 	if (devicePlatform === "Android") {
@@ -85,6 +117,14 @@ function onDeviceReady() {
 		link.rel = "stylesheet";
 		document.getElementsByTagName("head")[0].appendChild(link);
 	}
+	document.addEventListener('push-notification', function(event) {
+		var title = event.notification.title;
+		var userData = event.notification.userdata;
+
+		console.warn('user data: ' + JSON.stringify(userData));
+		alert(title);
+	});
+
 	$("#klinkurtnew").hide();
 	$("#vckurtnew").hide();
 	$("#ifylltnew").hide();

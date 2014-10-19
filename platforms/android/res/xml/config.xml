@@ -16,8 +16,15 @@
     <feature name="Accelerometer">
         <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
     </feature>
-    <feature name="PushPlugin">
-        <param name="android-package" value="com.plugin.gcm.PushPlugin" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" onload="true" value="com.pushwoosh.plugin.pushnotifications.PushNotifications" />
     </feature>
     <name>KlinikKurt</name>
     <description>Äntligen kan du fylla i KlinikKurt och VårdcentralKurt direkt från din telefon - Enklare, snabbare, smidigare, snyggare!
@@ -66,7 +73,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    <icon src="res/icon.png" />
+    <icon src="res/drawable/icon.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/ldpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/hdpi.png" />
