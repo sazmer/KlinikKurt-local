@@ -12,7 +12,6 @@
 		Alla som fyller i KlinikKurt eller VårdcentralKurt hjälper till att göra läkarutbildningen bättre, dessutom har du chans att vinna i lotteriet med ett pass med anestesihelikoptern som första pris!</description>
 	<author email="it-bevakare@msr.studorg.uu.se" href="http://www.studieradet.se">Medicinska Studierådet Uppsala</author>
 	<preference name="permissions" value="none" />
-	<preference name="phonegap-version" value="3.5.0" />
 	<preference name="orientation" value="default" />
 	<preference name="target-device" value="universal" />
 	<preference name="fullscreen" value="true" />
@@ -29,42 +28,8 @@
 	<preference name="android-installLocation" value="auto" />
 	<preference name="SplashScreen" value="screen" />
 	<preference name="SplashScreenDelay" value="10000" />
-	<gap:plugin name="org.apache.cordova.battery-status" />
-	<gap:plugin name="org.apache.cordova.camera" />
-	<gap:plugin name="org.apache.cordova.media-capture" />
-	<gap:plugin name="org.apache.cordova.console" />
-	<gap:plugin name="org.apache.cordova.contacts" />
-	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="org.apache.cordova.device-motion" />
-	<gap:plugin name="org.apache.cordova.device-orientation" />
-	<gap:plugin name="org.apache.cordova.dialogs" />
-	<gap:plugin name="org.apache.cordova.file" />
-	<gap:plugin name="org.apache.cordova.file-transfer" />
-	<gap:plugin name="org.apache.cordova.geolocation" />
-	<gap:plugin name="org.apache.cordova.globalization" />
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="org.apache.cordova.media" />
-	<gap:plugin name="org.apache.cordova.network-information" />
-	<gap:plugin name="org.apache.cordova.splashscreen" />
-	<gap:plugin name="org.apache.cordova.vibration" />
-	<icon src="res/drawable/icon.png" />
-	<gap:splash src="res/screen/android/ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
-	<gap:splash src="res/screen/android/mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
-	<gap:splash src="res/screen/android/hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
-	<gap:splash src="res/screen/android/xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
-	<icon src="icons/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-	<icon src="icons/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-	<icon src="icons/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<icon src="icons/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
-	<icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
-	<icon gap:platform="ios" height="114" src="www/res/icon/ios/icon-57-2x.png" width="114" />
-	<icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-72-2x.png" width="144" />
-	<gap:splash gap:platform="ios" height="480" src="www/res/screen/ios/screen-iphone-portrait.png" width="320" />
-	<gap:splash gap:platform="ios" height="960" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-	<gap:splash gap:platform="ios" height="1136" src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
-	<gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
-	<gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
+   
+   
+	<content src="index.html" />
 	<access origin="*" />
 </widget>
